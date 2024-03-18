@@ -33,7 +33,7 @@ public class Main {
 
 
         Vehicule monVehicule = new Vehicule();
-
+        monVehicule.afficher();
 
     }
 }
