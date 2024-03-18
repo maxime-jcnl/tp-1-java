@@ -6,18 +6,22 @@ public class Application {
         Scanner scanner = new Scanner(System.in);
 
         // Création des clients
+        // Création des clients
         Client[] clients = new Client[3];
         for (int i = 0; i < 3; i++) {
-            System.out.println("Entrer les informations pour le client " + (i + 1) + ":");
+            System.out.println("Entrez les informations pour le client " + (i + 1) + ":");
             System.out.print("ID: ");
             int ID = scanner.nextInt();
-            scanner.nextLine();
+            scanner.nextLine(); // Pour consommer la nouvelle ligne restante après nextInt()
             System.out.print("Nom: ");
             String nom = scanner.nextLine();
             System.out.print("Prénom: ");
             String prenom = scanner.nextLine();
-            clients[i] = new Client(ID, nom, prenom);
+            // Création d'un compte bancaire avec un solde initial de 0 pour chaque client
+            CompteBancaire compte = new CompteBancaire();
+            clients[i] = new Client(ID, nom, prenom, compte);
         }
+
         Client deuxiemeClient = clients[1];
         System.out.println("\nDépôt de 5000 euros pour le deuxième client...");
         deuxiemeClient.depot(5000);
