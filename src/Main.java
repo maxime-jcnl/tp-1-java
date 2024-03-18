@@ -20,7 +20,11 @@ public class Main {
         System.out.println(newDate.compareDates(newDate2));
 
         System.out.println("Entrer j:\n");
-        Scanner in = new Scanner(System.in);
+        Scanner in_jour = new Scanner(System.in);
+        System.out.println("Entrer m:\n");
+        Scanner in_mois = new Scanner(System.in);
+        System.out.println("Entrer a:\n");
+        Scanner in_annee = new Scanner(System.in);
 
     }
 }
