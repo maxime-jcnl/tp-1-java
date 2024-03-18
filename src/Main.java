@@ -16,5 +16,7 @@ public class Main {
 
         System.out.println(newDate.afficher());
         System.out.println(Date.compareDatesStat(newDate,newDate2));
+        System.out.println(newDate.compareDates(newDate2));
+
     }
 }

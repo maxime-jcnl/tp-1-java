@@ -31,4 +31,25 @@ public class Date {
             }
         }
     }
+    public  int compareDates( Date d2) {
+        if (this.annee > d2.annee) {
+            return 1;
+        } else if (this.annee < d2.annee) {
+            return -1;
+        } else {
+            if (this.mois > d2.mois) {
+                return 1;
+            } else if (this.mois < d2.mois) {
+                return -1;
+            } else {
+                if (this.jour > d2.jour) {
+                    return 1;
+                } else if (this.jour < d2.jour) {
+                    return -1;
+                } else {
+                    return 0; // Les dates sont égales
+                }
+            }
+        }
+    }
 }
