@@ -1,3 +1,4 @@
+import java.util.Scanner;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -17,6 +18,9 @@ public class Main {
         System.out.println(newDate.afficher());
         System.out.println(Date.compareDatesStat(newDate,newDate2));
         System.out.println(newDate.compareDates(newDate2));
+
+        System.out.println("Entrer j:\n");
+        Scanner in = new Scanner(System.in);
 
     }
 }

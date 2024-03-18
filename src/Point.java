@@ -3,10 +3,11 @@ public class Point
     // Liste des attributs
     double x;
     double y;
+    // Ecrire le constructeur par défaut
+
     Point(){
     }
 
-    // Ecrire le constructeur par défaut
     Point(double x,double y){
         this.x = x;
         this.y = y;
