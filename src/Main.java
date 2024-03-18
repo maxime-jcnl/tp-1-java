@@ -3,6 +3,7 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+
         Point P0, P1;
         P0 = new Point();
         P0.x=3.1;
@@ -18,13 +19,18 @@ public class Main {
         System.out.println(newDate.afficher());
         System.out.println(Date.compareDatesStat(newDate,newDate2));
         System.out.println(newDate.compareDates(newDate2));
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Entrer le jour (j): ");
+        int j = scanner.nextInt();
+        System.out.println("Entrer le mois (m): ");
+        int m = scanner.nextInt();
+        System.out.println("Entrer l'année (a): ");
+        int a = scanner.nextInt();
 
-        System.out.println("Entrer j:\n");
-        Scanner in_jour = new Scanner(System.in);
-        System.out.println("Entrer m:\n");
-        Scanner in_mois = new Scanner(System.in);
-        System.out.println("Entrer a:\n");
-        Scanner in_annee = new Scanner(System.in);
+        Date userDate = new Date(j,m,a);
+        System.out.println(userDate.afficher());
+        System.out.println(userDate.compareDates(newDate2));
+
 
     }
 }
