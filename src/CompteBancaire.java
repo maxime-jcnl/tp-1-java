@@ -11,7 +11,7 @@ public class CompteBancaire {
         this.solde = solde;
         this.interet = interet;
     }
-    public void changerTauxInteret(int nb){
+    public void changerTauxInteret(double nb){
         this.interet=nb;
     }
 
